@@ -1,0 +1,39 @@
+.main-header {
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+
+}
+
+
+
+
+
+.bg-aliceblue {
+    background-color: aliceblue;
+}
+
+.bg-antique-white {
+    background-color: antiquewhite;
+}
+
+main{
+    display: flex;
+}
+
+main>section {
+    flex: 1;
+}
+
+.formula-img {
+    height: 200px;
+    background-image: url(https://picsum.photos/200);
+    background-position: center;
+    background-size: cover;
+}
