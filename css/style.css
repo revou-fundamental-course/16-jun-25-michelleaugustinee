@@ -11,7 +11,7 @@ header {
 }
 
 .main-header {
-    background: linear-gradient(to right, #ffe6f0, #e0f7fa); /* warna pastel gradasi */
+    background: linear-gradient(to right, #ffe6f0, #e0f7fa);
     padding: 24px 16px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -91,7 +91,6 @@ form {
     color: rgb(0, 227, 227);
 }
 
-
 .formula-img {
     height: 300px;
     background-position: center;
@@ -102,7 +101,7 @@ form {
 
 @media (min-width: 768px) {
     .formula-img {
-        height: 400px; /* atau 500px kalau kamu mau lebih besar */
+        height: 400px;
     }
 }
 
