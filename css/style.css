@@ -1,39 +1,158 @@
-.main-header {
+html {
+    background-color: azure;
+}
+
+body {
+    font-family: monospace;
+}
+
+header {
     text-align: center;
 }
 
-.nav {
+.main-header {
+    background: linear-gradient(to right, #ffe6f0, #e0f7fa); /* warna pastel gradasi */
+    padding: 24px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 32px;
+    text-align: center;
+    color: #333;
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    color: #007acc; 
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 122, 204, 0.2); 
+}
+
+.main-header p {
+    font-size: 1rem;
+    color: #ff69b4;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+nav {
     display: flex;
     flex-direction: column;
 }
 
 nav a {
-
+    border-radius: 8px;
+    height: 50px;
+    align-content: center;
+    color: black;
+    text-decoration: none;
 }
 
-
-
-
-
-.bg-aliceblue {
+/* .bg-aliceblue {
     background-color: aliceblue;
 }
 
 .bg-antique-white {
-    background-color: antiquewhite;
+    background-color: rgb(247, 213, 218);
+} */
+
+main {
+    display: flex;
+    gap: 32px;
 }
 
-main{
-    display: flex;
+@media (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
 }
 
 main>section {
     flex: 1;
+    text-align: center;
+    background-color: rgb(247, 213, 218);
+    border-radius: 8px;
+    
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+main > section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    color: #007acc;
+}
+
+form {
+    color: rgb(0, 227, 227);
+}
+
+
 .formula-img {
-    height: 200px;
-    background-image: url(https://picsum.photos/200);
+    height: 300px;
     background-position: center;
-    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+    .formula-img {
+        height: 400px; /* atau 500px kalau kamu mau lebih besar */
+    }
+}
+
+.img-luas {
+    background-image: url("../picture/luas-segitiga.png");
+}
+
+.img-keliling {
+    background-image: url("../picture/keliling-segitiga.png");
+}
+
+/* Form Style */
+input[type=number] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-family: monospace;
+    font-size: 14px;
+    color: aqua;
+    background-color: azure;
+    display: inline-block;
+    border: 1px solid aqua;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: lightpink;
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    color: #007acc;
+    font-family: monospace;
+}
+
+.form-button {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hasil {
+    font-size: 25px;
+}
+
+footer {
+    text-align: center;
+    color: lightpink;
 }

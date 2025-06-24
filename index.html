@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Matematik - Michelle</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Head Content -->
+    <header class="main-header">
+        <h1>🎓 Welcome to MA's KATIK 🎲</h1>
+
+        <p>Selamat datang ke Kalkulator Matematik. Di kalkulator ini, kalian bisa mencari luas dan keliling segitiga loh! Ayo
+            mencoba kalkulator ini jika kalian mengalami kesulitan dalam menghitung Luas dan Keliling Segitiga >_< </p>
+
+        <!-- Navigation -->
+        <!-- <nav>
+            <a class="bg-aliceblue" href="">Segitiga</a>
+            <a class="bg-antique-white" href="">Jajar Genjang</a>
+        </nav> -->
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Luas -->
+        <section>
+            <header>
+                <h2>Luas Segitiga</h2>
+            </header>
+        
+            <!-- Konten Luas -->
+            <div class="formula-img img-luas"></div>
+
+            <h3><b>Rumus Luas Segitiga = 1/2 * Alas * Tinggi</b></h3>
+
+            <!-- Form Luas -->
+            <form>
+                <header>
+                    <h2>Form Luas Segitiga</h2>
+                </header>
+
+                <div>
+                    <label for="alas">Alas = </label>
+                    <input type="number" id="alas" name="alas" placeholder="Masukkan Alas Segitiga (cm)" min="1" required>
+                </div>
+
+                <div>
+                    <label for="tinggi">Tinggi = </label>
+                    <input type="number" id="tinggi" name="tinggi" placeholder="Masukkan Tinggi Segitiga (cm)" min="1" required>
+                </div>
+                
+                <div class="form-button">
+                    <button onclick="luasSegitiga(event)">Hitung</button>
+                    <button onclick="resetLuas()">Reset</button>
+                </div>
+
+                <div>
+                    <p id="luas" class="hasil"></p>
+                </div>
+            </form>
+        </section>
+
+        <!-- Keliling -->
+        <section>
+            <header>
+                <h2>Keliling Segitiga</h2>
+            </header>
+
+            <!-- Konten Keliling -->
+            <div class="formula-img img-keliling"></div>
+
+            <h3><b>Rumus Keliling Segitiga = 3 * Sisi</h3></p>
+
+            <!-- Form Keliling -->
+            <form>
+                <header>
+                    <h2>Form Keliling Segitiga</h2>
+                </header>
+
+                <div>
+                    <label for="alas">Sisi A = </label>
+                    <input type="number" id="sisi-a" name="sisi-a" placeholder="Masukkan Sisi A (cm)" min="1" required>
+                </div>
+
+                <div>
+                    <label for="sisi-b">Sisi B = </label>
+                    <input type="number" id="sisi-b" name="sisi-b" placeholder="Masukkan Sisi B (cm)" min="1" required>
+                </div>
+
+                <div>
+                    <label for="sisi-c">Sisi C = </label>
+                    <input type="number" id="sisi-c" name="sisi-c" placeholder="Masukkan Sisi C (cm)" min="1" required>
+                </div>
+                
+                <div class="form-button">
+                    <button onclick="kelilingSegitiga(event)">Hitung</button>
+                    <button onclick="resetKeliling()">Reset</button>
+                </div>
+
+                <div>
+                    <p id="keliling" class="hasil"></p>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <p>&copy; 2025 Michelle. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
