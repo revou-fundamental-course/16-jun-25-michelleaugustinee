@@ -1,3 +1,4 @@
+// Menghitung Luas Segitiga
 function luasSegitiga(event) {
     event.preventDefault();
 
@@ -15,12 +16,14 @@ function luasSegitiga(event) {
     hasil.textContent = `Luas Segitiga = ${luas} cm²`;
 }
 
+// Reset nilai Luas Segitiga
 function resetLuas() {
     document.getElementById("alas").value = "";
     document.getElementById("tinggi").value = "";
     document.getElementById("luas").textContent = "";
 }
 
+// Menghitung Keliling Segitiga
 function kelilingSegitiga(event) {
     event.preventDefault();
 
@@ -39,6 +42,7 @@ function kelilingSegitiga(event) {
     hasil.textContent = `Keliling Segitiga = ${keliling} cm`;
 }
 
+// Reset nilai Keliling Segitiga
 function resetKeliling() {
     document.getElementById("sisi-a").value = "";
     document.getElementById("sisi-b").value = "";
